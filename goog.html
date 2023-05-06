@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-app.js"></script>
+    <link rel="stylesheet" href="googg.css" />
+    <script type="module" src="goggg.js"></script>
+    <meta charsetserve="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    `
+    <div class="container">
+      <div class="profile-icon">
+        <!-- <a href=""
+          ><img src="images-editor/ssmvtnogc7ue0jufjd03h6mj89.png" alt=""
+        /></a> -->
+        <input type="file" id="file-el" />
+        <!-- url reader input -->
+        <a href=""><img src="images/IMG_4002.jpg" alt="" /></a>
+      </div>
+      <h1 class="title">KNOWTAP</h1>
+      <div class="wrapper animated bounceInLeft">
+        <div class="contact">
+          <h3 class="contact-us">Editor</h3>
+          <div class="alert">Your message has been sent!</div>
+          <form id="contactForm">
+            <p class="name-field">
+              <label>Name <span>*</span></label>
+              <input type="text" name="name" id="name" required />
+            </p>
+            <p class="company-field">
+              <label>Company</label>
+              <input type="text" name="company" id="company" />
+            </p>
+            <p class="email-field">
+              <label>Email <span>*</span></label>
+              <input type="email" name="email" id="email" required />
+            </p>
+            <p class="phone-field">
+              <label>Phone</label>
+              <input type="text" name="phone" id="phone" />
+            </p>
+            <!-- ///////////////////////////////////////////eyad work///////////////////////////////////////////////////// -->
+            <br />
+            <p class="fb-field">
+              <label>Facebook Link <span></span></label>
+              <input
+                type="text"
+                name="fb-link"
+                id="fb-link"
+                pattern="https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)"
+                title="Please enter a valid url"
+              />
+            </p>
+            <p class="linkedin-field">
+              <label>linkedin Link <span></span></label>
+              <input type="text" name="linkedin-link" id="li-link" />
+            </p>
+            <p class="mail-field">
+              <label>mail Link <span></span></label>
+              <input type="text" name="mail-link" id="gmail-link" />
+            </p>
+            <p class="insta-field">
+              <label>insta Link <span></span></label>
+              <input type="text" name="insta-link" id="ig-link" />
+            </p>
+            <p class="tiktok-field">
+              <label>tiktok Link <span></span></label>
+              <input type="text" name="tiktok-link" id="tiktok-link" />
+            </p>
+            <div id="demoNFC">
+              <input
+                name="nfc-link"
+                type="text"
+                id="demoT"
+                value="enter the link to upload to nfc"
+                required
+              />
+              <input
+                type="button"
+                id="demoW"
+                value="Write"
+                onclick="nfc.write();"
+              />
+              <input
+                type="button"
+                id="demoR"
+                value="Read"
+                onclick="nfc.read()"
+              />
+            </div>
+
+            <!-- (B) "CONSOLE MESSAGES" -->
+            <div id="demoMSG"></div>
+
+            <!-- ///////////////////////////////////////////eyad work///////////////////////////////////////////////////// -->
+            <p class="message-field full">
+              <label>About</label>
+              <textarea name="message" rows="5" id="message"></textarea>
+            </p>
+            <p class="required-field">Required field <span>*</span></p>
+            <p class="submit-button">
+              <button type="submit" onclick="saveData()" id="btn">
+                <a href="index.html">Submit</a>
+              </button>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- ///////////////////////attention here i put js main of the 3rd page////////////////////////////////////// -->
+
+    <script src="main1.js"></script>
+
+    <!-- ///////////////////////attention here i put js main of the 3rd page////////////////////////////////////// -->
+  </body>
+</html>
